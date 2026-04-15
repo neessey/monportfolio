@@ -26,6 +26,20 @@ export function ProjectsSection() {
             <ProjectCard key={project.slug} project={project} index={i} />
           ))}
         </div>
+        <div className="mt-16 flex justify-center">
+          <a
+            href="https://github.com/neessey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 rounded-full border border-mist/20 px-8 py-3 text-sm font-medium text-mist transition hover:border-accent/50 hover:text-accent"
+          >
+            Voir plus de projets sur GitHub
+
+            <span className="transition group-hover:translate-x-1">
+              ↗
+            </span>
+          </a>
+        </div>
       </div>
     </section>
   );

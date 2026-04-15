@@ -9,6 +9,7 @@ export type Project = {
   description: string;
   longDescription: string[];
   stack: string[];
+  liveUrl?: string;
   highlights: { title: string; body: string }[];
 };
 
@@ -16,6 +17,7 @@ export const projects: Project[] = [
   {
     slug: "harlem-hair-braiding",
     title: "Harlem Hair Braiding",
+    liveUrl: "https://harlem-hair-braiding.vercel.app/",
     tagline: "Salon de coiffure américain avec bookings en ligne",
     year: "2025",
     role: " Frontend Developer",
@@ -43,6 +45,7 @@ export const projects: Project[] = [
   {
     slug: "binko",
     title: "Binko",
+    liveUrl: "https://binko-assoc.vercel.app/",
     tagline: "Agence Immobilière avec un dashboard de gestion",
     year: "2026",
     role: "Frontend Developer",
@@ -57,18 +60,19 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     highlights: [
       {
-        title: "Latency",
-        body: "Sub-100ms updates on streaming channels with graceful degradation offline.",
+        title: "Mises à jour en temps réel",
+        body: "Visualisations des biens et des performances en temps réel pour permettre aux agents de prendre des décisions éclairées rapidement.",
       },
       {
-        title: "A11y",
-        body: "Keyboard-first navigation across charts and incident timelines.",
+        title: "Dashboard interactif",
+        body: "Un dashboard admin intuitif pour gérer les annonces, les visites et les interactions avec les clients de manière efficace.",
       },
     ],
   },
   {
     slug: "airPublic",
     title: "AirPublic",
+    liveUrl: "https://airpublic.vercel.app/",
     tagline: "Gestion de l'air pour les espaces publics",
     year: "2024",
     role: "Frontend Developer",
@@ -90,6 +94,7 @@ export const projects: Project[] = [
         body: "Intégration de Sanity pour permettre aux équipes non techniques de mettre à jour les contenus et les alertes sans intervention du développement.",
       },
     ],
+
   },
 ];
 
