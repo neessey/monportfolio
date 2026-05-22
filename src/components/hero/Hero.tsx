@@ -91,7 +91,7 @@ export function Hero() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-purple-500/20 via-transparent to-cyan-500/20 blur-2xl" />
 
               <img
-                src="/me.png" // <-- remplace par ta photo
+                src="/me.png"
                 alt="Portrait"
                 className="relative z-10 w-full rounded-2xl object-cover shadow-2xl border border-white/10"
               />
