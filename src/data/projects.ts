@@ -70,28 +70,29 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "airPublic",
-    title: "AirPublic",
-    liveUrl: "https://airpublic.vercel.app/",
+    slug: "ysedrop",
+    title: "YseDrop",
+    liveUrl: "https://ysedrop.onrender.com",
     tagline: "Gestion de l'air pour les espaces publics",
-    year: "2024",
-    role: "Frontend Developer",
-    cover: "/images/air.jpg",
+    year: "2026",
+    role: "FullStack Developer",
+    cover: "/images/yse.jpg",
     coverGradient: "from-amber-500/15 via-rose-500/10 to-transparent",
     description:
-      "Dashboard de monitoring de la qualité de l'air pour les villes, avec des visualisations claires et des alertes en temps réel.",
+      "Plateforme de transfert et de partage de fichiers rapide et sécurisé, permettant d’envoyer et recevoir des fichiers entre appareils en temps réel.",
     longDescription: [
-      "Création d'un dashboard de monitoring de la qualité de l'air pour les villes, avec des visualisations claires et des alertes en temps réel. Les données sont présentées de manière accessible pour les décideurs et le grand public, avec des recommandations d'action basées sur les niveaux de pollution.",
+      "Développement d'une plateforme de transfert et de partage de fichiers rapide et sécurisé, permettant d’envoyer et recevoir des fichiers entre appareils en temps réel. L'application utilise des technologies modernes pour assurer une expérience utilisateur fluide et des performances élevées.",
+      "Mise en place de fonctionnalités avancées telles que le chiffrement de bout en bout, la gestion des permissions et une interface utilisateur intuitive pour faciliter le partage de fichiers entre utilisateurs.",
     ],
-    stack: ["Next.js", "Framer Motion", "Sanity", "Tailwind CSS"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
     highlights: [
       {
         title: "Systeme de design",
-        body: "Un design system robuste avec des composants réutilisables et une documentation complète pour assurer la cohérence à travers le dashboard.",
+        body: "Création d'un système de design complet pour assurer la cohérence visuelle et faciliter le développement de nouvelles fonctionnalités.",
       },
       {
-        title: "Intégration CMS",
-        body: "Intégration de Sanity pour permettre aux équipes non techniques de mettre à jour les contenus et les alertes sans intervention du développement.",
+        title: "Fonctionnalités avancées",
+        body: "Mise en place de fonctionnalités avancées telles que le chiffrement de bout en bout, la gestion des permissions et une interface utilisateur intuitive pour faciliter le partage de fichiers entre utilisateurs.",
       },
     ],
 
