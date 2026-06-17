@@ -4,20 +4,26 @@ import { motion } from "framer-motion";
 import { Reveal, Stagger, staggerItem } from "./Reveal";
 
 const milestones = [
-  { year: "2022", label: "Bureautique & Arduino" },
-  { year: "2024", label: "Html & CSS" },
-  { year: "2025", label: "Next.js & TypeScript" },
-  { year: "2026", label: "Performance & Accessibilité" },
+  { year: "2022", label: "Informatique & électronique (Arduino)" },
+  { year: "2024", label: "Premiers projets en développement web" },
+  { year: "2025", label: "Construction d’applications complètes" },
+  { year: "2026", label: "Ingénierie logicielle" },
 ];
 
 const skills = [
   "TypeScript",
   "React / Next.js",
   "Tailwind CSS",
-  "HTML & CSS",
-  "Vercel",
-  "Performance",
-  "Accessibility",
+  "HTML / CSS",
+  "MySQL",
+  "PHP / Laravel",
+  "Node.js",
+  "Python",
+  "Vercel / Render",
+  "Test Logiciel",
+  "Visual Code",
+  "GitHub / Git",
+
 ];
 
 export function AboutSection() {
@@ -70,7 +76,7 @@ export function AboutSection() {
 
         <Reveal className="mt-20" delay={0.05}>
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-mist/45">
-            Focus
+            Skills
           </p>
           <ul className="mt-8 flex flex-wrap gap-3">
             {skills.map((s) => (
