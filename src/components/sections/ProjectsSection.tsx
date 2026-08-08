@@ -17,15 +17,15 @@ export function ProjectsSection() {
           </h2>
           <p className="mt-6 max-w-xl text-lg text-mist/60">
             Ouvrez un projet pour avoir la narration complète, la pile et les résultats.
-
           </p>
         </Reveal>
 
-        <div className="mt-20 grid gap-10 md:gap-12">
+        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
           ))}
         </div>
+
         <div className="mt-16 flex justify-center">
           <a
             href="https://github.com/neessey"
@@ -34,10 +34,7 @@ export function ProjectsSection() {
             className="group inline-flex items-center gap-3 rounded-full border border-mist/20 px-8 py-3 text-sm font-medium text-mist transition hover:border-accent/50 hover:text-accent"
           >
             Voir plus de projets sur GitHub
-
-            <span className="transition group-hover:translate-x-1">
-              ↗
-            </span>
+            <span className="transition group-hover:translate-x-1">↗</span>
           </a>
         </div>
       </div>

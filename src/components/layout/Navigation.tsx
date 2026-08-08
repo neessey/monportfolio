@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const links = [
-  { href: "/#work", label: "Projets" },
   { href: "/#about", label: "À propos" },
+  { href: "/#work", label: "Projets" },
   { href: "/#contact", label: "Contact" },
 ];
 

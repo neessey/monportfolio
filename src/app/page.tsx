@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+       <AboutSection />
       <ProjectsSection />
-      <AboutSection />
       <ContactSection />
     </>
   );

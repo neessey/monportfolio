@@ -97,8 +97,96 @@ export const projects: Project[] = [
       },
     ],
   },
+{
+  slug: "colonie-ci",
+  title: "Colonie CI",
+  liveUrl: "https://coloniee-ci.onrender.com",
+  tagline: "Plateforme e-commerce dédiée au miel et aux produits de la ruche",
+  year: "2026",
+  role: "FullStack Developer",
+  cover: "/images/colonie-ci.jpeg",
+  coverGradient: "from-amber-500/15 via-yellow-500/10 to-transparent",
+  description:
+    "Plateforme e-commerce permettant de découvrir et commander des produits de la ruche, avec un système de fidélisation intégré.",
+  longDescription: [
+    "Conception et développement d'une plateforme e-commerce moderne dédiée à la vente de miel et de produits issus de la ruche. L'expérience permet aux clients de découvrir les produits, consulter leurs informations et effectuer leurs commandes depuis une interface intuitive.",
+    "Intégration d'un système de fidélisation baptisé « La Ruche », permettant aux clients de bénéficier d'une expérience plus personnalisée et de suivre leur progression au sein du programme.",
+  ],
+  stack: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
+  highlights: [
+    {
+      title: "E-commerce",
+      body: "Catalogue de produits et parcours d'achat pensés pour offrir une expérience simple, fluide et adaptée au mobile.",
+    },
+    {
+      title: "La Ruche",
+      body: "Système de fidélisation intégré à la plateforme pour renforcer l'engagement et encourager les clients à revenir.",
+    },
+  ],
+},
 
+  {
+    slug: "huinestfood",
+    title: "HuinestFood",
+    liveUrl: "https://huinestfood.vercel.app",
+    tagline: "Plateforme digitale dédiée à la restauration",
+    year: "2026",
+    role: "FullStack Developer",
+    cover: "/images/huinest.jpeg",
+    coverGradient: "from-orange-500/15 via-red-500/10 to-transparent",
+    description:
+      "Expérience digitale moderne pour découvrir, présenter et gérer une offre de restauration en ligne.",
+    longDescription: [
+      "Conception et développement d'une plateforme web dédiée à la restauration, avec une interface pensée pour rendre la découverte des produits simple et agréable.",
+      "Travail sur l'expérience utilisateur, la présentation des contenus et l'adaptation de l'interface aux différents formats d'écran.",
+    ],
+    stack: ["Vite.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    highlights: [
+      {
+        title: "Expérience utilisateur",
+        body: "Une interface claire et immersive permettant de découvrir rapidement les différentes offres.",
+      },
+      {
+        title: "Responsive",
+        body: "Une expérience optimisée pour les smartphones, tablettes et ordinateurs.",
+      },
+    ],
+  },
+
+  {
+    slug: "deep-digital",
+    title: "Deep Digital",
+    liveUrl: "https://deep-digit.vercel.app",
+    tagline: "Expérience digitale moderne pour une agence créative",
+    year: "2026",
+    role: "Frontend Developer",
+    cover: "/images/deep-digit.jpeg",
+    coverGradient: "from-indigo-500/15 via-purple-500/10 to-transparent",
+    description:
+      "Site web moderne conçu pour présenter l'identité, les services et l'univers digital de Deep Digital.",
+    longDescription: [
+      "Conception d'une expérience web moderne mettant en avant l'identité visuelle et les services de Deep Digital.",
+      "Développement d'une interface responsive avec des animations et des interactions pensées pour offrir une navigation fluide et une présentation immersive.",
+    ],
+    stack: ["Vite.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    highlights: [
+      {
+        title: "Direction artistique",
+        body: "Une interface visuelle conçue pour renforcer l'identité digitale et donner une présence forte à la marque.",
+      },
+      {
+        title: "Interactions",
+        body: "Animations et micro-interactions utilisées pour rendre la navigation plus dynamique et immersive.",
+      },
+    ],
+  },
 ];
+
+
+
+
+
+
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
