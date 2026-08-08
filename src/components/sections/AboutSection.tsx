@@ -4,28 +4,12 @@ import { motion } from "framer-motion";
 import { Reveal, Stagger, staggerItem } from "./Reveal";
 
 const milestones = [
-  { year: "2022", label: "Informatique & électronique (Arduino)" },
-  { year: "2024", label: "Premiers projets en développement web" },
-  { year: "2025", label: "Construction d’applications complètes" },
-  { year: "2026", label: "Ingénierie logicielle" },
+  { year: "2022", label: "Bureautique & Arduino" },
+  { year: "2024", label: "Html & CSS" },
+  { year: "2025", label: "Next.js & TypeScript" },
+  { year: "2026", label: "Performance & Accessibilité" },
 ];
 
-<<<<<<< HEAD
-const skills = [
-  "TypeScript",
-  "React / Next.js",
-  "Tailwind CSS",
-  "HTML / CSS",
-  "MySQL",
-  "PHP / Laravel",
-  "Node.js",
-  "Python",
-  "Vercel / Render",
-  "Test Logiciel",
-  "Visual Code",
-  "GitHub / Git",
-
-=======
 const skillPanels = [
   {
     title: "Langages & Technologies",
@@ -54,7 +38,6 @@ const skillPanels = [
       "Tests & Recette",
     ],
   },
->>>>>>> 5d07ac2 (update)
 ];
 
 export function AboutSection() {
@@ -108,13 +91,8 @@ export function AboutSection() {
         </div>
 
         <Reveal className="mt-20" delay={0.05}>
-<<<<<<< HEAD
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-mist/45">
-            Skills
-=======
            <p className="text-xs font-medium uppercase tracking-[0.35em] text-accent/90">
             Compétences
->>>>>>> 5d07ac2 (update)
           </p>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-2">

@@ -4,7 +4,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import gsap from "gsap";
-import { HeroCanvasGate } from "./HeroCanvasGate";
 
 const container = {
   hidden: { opacity: 0 },
@@ -35,7 +34,6 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[100dvh] flex-col justify-end overflow-hidden bg-ink pb-8 pt-36 md:pt-0 md:pb-12">
       <div className="absolute inset-0 opacity-90">
-        <HeroCanvasGate />
       </div>
       <div
         className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/80 to-transparent"
