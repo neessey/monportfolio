@@ -2,16 +2,21 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/#about", label: "À propos" },
   { href: "/#work", label: "Projets" },
+  { href: "/#certifications", label: "Certifications" },
   { href: "/#contact", label: "Contact" },
 ];
 
 const MARQUEE_ITEMS = Array(8).fill("YANISS-ELIE SEY");
 
 export function Navigation() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/admin")) return null;
+
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex flex-col">
 

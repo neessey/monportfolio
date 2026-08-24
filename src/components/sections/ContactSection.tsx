@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Reveal } from "./Reveal";
+import { defaultSocials, getSingleton, type SocialsContent } from "@/lib/cms";
 
 export function ContactSection() {
   const [focused, setFocused] = useState<string | null>(null);
+  const [socials, setSocials] = useState<SocialsContent>(defaultSocials);
+  useEffect(() => { getSingleton<SocialsContent>("site", "socials").then(v => v && setSocials({ ...defaultSocials, ...v })).catch(() => {}); }, []);
 
   return (
     <section
@@ -26,10 +29,10 @@ export function ContactSection() {
               réponds généralement dans les deux jours ouvrables.
             </p>
             <a
-              href="mailto:yanisseliesey@gmail.com"
+              href={`mailto:${socials.email}`}
               className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-accent transition hover:text-mist"
             >
-              yanisseliesey@gmail.com
+              {socials.email}
               <span aria-hidden>→</span>
             </a>
           </Reveal>

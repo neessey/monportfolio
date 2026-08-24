@@ -19,11 +19,11 @@ const sans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Frontend Developer — Creative Portfolio",
+    default: "Yaniss-Elie Sey — Frontend Developer",
     template: "%s · Portfolio",
   },
   description:
-    "Cinematic interfaces, precise motion, and performance-first frontend development.",
+    "Portfolio de Yaniss-Elie Sey — développeur frontend et fullstack.",
 };
 
 export default function RootLayout({

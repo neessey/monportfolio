@@ -2,7 +2,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getSingleton, defaultProfile, type ProfileContent } from "@/lib/cms";
 import gsap from "gsap";
 
 const container = {
@@ -23,6 +24,12 @@ const item = {
 };
 
 export function Hero() {
+  const [profile, setProfile] = useState<ProfileContent>(defaultProfile);
+
+  useEffect(() => {
+    getSingleton<ProfileContent>("site", "profile").then((value) => value && setProfile({ ...defaultProfile, ...value })).catch(() => {});
+  }, []);
+
   useEffect(() => {
     gsap.fromTo(
       ".hero-scroll-hint",
@@ -55,24 +62,23 @@ export function Hero() {
               variants={item}
               className="mb-6 text-xs font-medium uppercase tracking-[0.35em] text-mist/60"
             >
-              Portfolio · 2026
+              {profile.eyebrow}
             </motion.p>
 
             <motion.h1
               variants={item}
               className="font-display text-[clamp(2.75rem,8vw,6.5rem)] font-semibold leading-[0.95] tracking-tight text-mist"
             >
-              Frontend
+              {profile.titleLine1}
               <br />
-              <span className="text-mist/40">Developpeuse</span>
+              <span className="text-mist/40">{profile.titleLine2}</span>
             </motion.h1>
 
             <motion.p
               variants={item}
               className="mt-8 max-w-xl text-lg leading-relaxed text-mist/65 md:text-xl"
             >
-              Développeuse web. J’aime construire des interfaces rapides, claires et
-              immersives, du concept au déploiement.
+              {profile.intro}
             </motion.p>
           </motion.div>
 
@@ -89,7 +95,7 @@ export function Hero() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-purple-500/20 via-transparent to-cyan-500/20 blur-2xl" />
 
               <img
-                src="/me.png"
+                src={profile.imageUrl || "/me.png"}
                 alt="Portrait"
                 className="relative z-10 w-full rounded-2xl object-cover shadow-2xl border border-white/10"
               />
