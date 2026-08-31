@@ -2,7 +2,7 @@
   {
     "origin": [
       "http://localhost:3000",
-      "https://monportfo-lac.app",
+      "https://monportfolio-lac.app",
       "https://yanisselie.com"
     ],
     "method": ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"],

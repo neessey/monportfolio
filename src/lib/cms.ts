@@ -111,7 +111,7 @@ export async function deleteItem(collectionName: string, id: string) {
 export const defaultProfile: ProfileContent = {
   name: "Yaniss-Elie Sey",
   eyebrow: "Portfolio · 2026",
-  titleLine1: "Frontend",
+  titleLine1: "Full-Stack",
   titleLine2: "Développeuse",
   intro: "Développeuse web. J’aime construire des interfaces rapides, claires et immersives, du concept au déploiement.",
   imageUrl: "/me.png",
@@ -121,7 +121,7 @@ export const defaultAbout: AboutContent = {
   eyebrow: "About",
   title: "Notice Bibliographique.",
   paragraphs: [
-    "J'ai fait du développement mon métier à part entière. Devenue développeuse frontend, j'aime tenir les deux bouts : la précision du code et le soin apporté à l'expérience.",
+    "J'ai fait du développement mon métier à part entière. Devenue développeuse full-stack, j'aime tenir les deux bouts : la précision du code et le soin apporté à l'expérience.",
     "Tout a commencé par la curiosité : comprendre comment fonctionnent les sites que je consultais, puis en fabriquer moi-même. Les premières pages en HTML et CSS ont laissé place à des applications plus complètes.",
     "Aujourd'hui, je construis des produits de bout en bout : maquette et identité visuelle, développement front avec React · TypeScript · Tailwind, API et données avec Node.js · Laravel · MySQL, et mise en production sur Vercel ou Render. Je teste, je corrige, je documente.",
   ],
@@ -147,8 +147,8 @@ export const defaultSocials: SocialsContent = {
 };
 
 export const defaultSettings: SettingsContent = {
-  siteTitle: "Yaniss-Elie Sey — Frontend Developer",
-  siteDescription: "Portfolio de Yaniss-Elie Sey — développeuse frontend et fullstack.",
+  siteTitle: "Yaniss-Elie Sey — Full-Stack Developer",
+  siteDescription: "Portfolio de Yaniss-Elie Sey — développeuse fullstack.",
   availability: "Disponible pour de nouveaux projets",
   location: "Côte d'Ivoire",
   footerText: "Portfolio made by Yaniss-Elie Sey.",
