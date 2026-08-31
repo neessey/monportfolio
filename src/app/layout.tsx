@@ -21,17 +21,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yanisselie.com"),
 
   title: {
-    default: "Yaniss Elie — Développeur Full-Stack",
-    template: "%s | Yaniss Elie",
+    default: "Yaniss-Elie Sey — Développeur Full-Stack",
+    template: "%s | Yaniss-Elie Sey",
   },
 
   description:
-    "Yaniss Elie est un développeur Full-Stack basé à Abidjan, Côte d'Ivoire. Découvrez son parcours, ses projets, ses compétences et ses certifications.",
+    "Yaniss-Elie Sey est un développeur Full-Stack basé à Abidjan, Côte d'Ivoire. Découvrez son parcours, ses projets, ses compétences et ses certifications.",
 
   keywords: [
-    "Yaniss Elie",
-    "Yaniss-Elie Sey",
-    "Yaniss Elie développeur",
+   "Yaniss-Elie Sey",
+  "Yaniss Elie Sey",
+  "Yaniss-Elie Sey",
+  "Yaniss-Elie",
+    "Yaniss-Elie Sey développeur",
+     "Yaniss-Elie  développeur",
     "Yaniss Elie cybersécurité",
     "développeur Abidjan",
     "développeur Côte d'Ivoire",
@@ -41,12 +44,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Yaniss Elie",
+      name: "Yaniss-Elie Sey",
       url: "https://yanisselie.com",
     },
   ],
 
-  creator: "Yaniss Elie",
+  creator: "Yaniss-Elie Sey",
 
   alternates: {
     canonical: "https://yanisselie.com",
@@ -55,16 +58,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://yanisselie.com",
-    title: "Yaniss Elie — Développeur Full-Stack",
+    title: "Yaniss-Elie Sey — Développeur Full-Stack",
     description:
-      "Portfolio officiel de Yaniss Elie — Développeur Full-Stack basé à Abidjan.",
-    siteName: "Yaniss Elie",
+      "Portfolio officiel de Yaniss-Elie Sey — Développeur Full-Stack basé à Abidjan.",
+    siteName: "Yaniss-Elie Sey",
     images: [
       {
         url: "/me.png",
         width: 1200,
         height: 630,
-        alt: "Yaniss Elie",
+        alt: "Yaniss-Elie Sey",
       },
     ],
   },
@@ -85,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+    <html lang="fr" className={`${display.variable} ${sans.variable}`}>
       <body className="font-sans grain">
         <SmoothScroll>
           <Navigation />
@@ -95,7 +98,7 @@ export default function RootLayout({
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Yaniss Elie",
+      name: "Yaniss-Elie Sey",
       alternateName: "Yaniss-Elie Sey",
       url: "https://yanisselie.com",
       image: "https://yanisselie.com/me.png",
